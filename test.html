@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Окошко</title>
+</head>
+<style>
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.group {
+  display: flex;
+}
+
+.rectangle {
+  width: 150px;
+  height: 50px;
+  background-color: #f0f0f0;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.6;
+  animation: slideAnimation 12s infinite;
+}
+
+@keyframes slideAnimation {
+  0%, 100% {
+    transform: translateX(-300px);
+  }
+  8.33%, 33.33% {
+    transform: translateX(0);
+  }
+  58.33%, 83.33% {
+    transform: translateX(0);
+  }
+}
+
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="slider">
+          <div class="group">
+            <div class="rectangle"><h3>Rectangle 1</h3></div>
+            <div class="rectangle"><h3>Rectangle 2</h3></div>
+            <div class="rectangle"><h3>Rectangle 3</h3></div>
+          </div>
+          <div class="group">
+            <div class="rectangle"><h3>Rectangle 4</h3></div>
+            <div class="rectangle"><h3>Rectangle 5</h3></div>
+            <div class="rectangle"><h3>Rectangle 6</h3></div>
+          </div>
+          <div class="group">
+            <div class="rectangle"><h3>Rectangle 7</h3></div>
+            <div class="rectangle"><h3>Rectangle 8</h3></div>
+            <div class="rectangle"><h3>Rectangle 9</h3></div>
+          </div>
+          <div class="group">
+            <div class="rectangle"><h3>Rectangle 10</h3></div>
+            <div class="rectangle"><h3>Rectangle 11</h3></div>
+            <div class="rectangle"><h3>Rectangle 12</h3></div>
+          </div>
+        </div>
+      </div>
+      
+</body>
+</html>

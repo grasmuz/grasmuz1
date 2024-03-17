@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
@@ -12,9 +12,9 @@
             <div class="logo"></div>
         </a>
         <nav class="menu">
-            <a href="#" class="menu-item">Получить деньги</a>
+            <a href="Poluc.html" class="menu-item">Получить деньги</a>
             <a href="#" class="menu-item">Погасить кредит</a>
-            <a href="support.html" class="menu-item">Поддержка</a>
+            <a href="#" class="menu-item">Рассчет процента</a>
             <div class="dropdown">
                 <a href="#" class="menu-item">Контакты</a>
                 <div class="dropdown-content">
@@ -34,28 +34,28 @@
         </nav>
         <button class="login-btn">Вход</button>
     </header>
-    <div class="main-content">
-        <div class="left-panel">
-            <div class="popup">
-                <div class="header2">
-                    <h2>Займ</h2>
-                </div>
-                <div class="content">
-                    <button class="loan-btn">Первый займ</button>
-                    <button class="loan-btn">Повторный займ</button>
-                    <label for="amount">Сумма:</label>
-                    <input type="text" id="amount" placeholder="Введите сумму">
-                </div>
-                <div class="footer">
-                    <button class="get-money-btn">Взять деньги</button>
-                </div>
+    
+<div>
+    <div class="container2">
+        <div class="popup">
+            <div class="header2">
+                <h2>Займ</h2>
             </div>
-        </div>
-        <div class="right-panel">
-            <img src="u26.png" alt="aga" class="background-photo">
-        </div>
+            <div>
+                <input type="radio" id="first-loan" name="loan-type" class="toggle-btn" />
+                <label for="first-loan" class="loan-label">Первый займ</label>
+                <input type="radio" id="repeat-loan" name="loan-type" class="toggle-btn" />
+                <label for="repeat-loan" class="loan-label">Повторный займ</label>
+                <label for="amount">Сумма:</label>
+                <input type="text" id="amount" placeholder="Введите сумму">
+            </div>
+            <div class="footer">
+                <button class="get-money-btn">Взять деньги</button>
+            </div>
+        </div>    
+        <img src="u26.png" alt="aga" class="background-photo">
     </div>
-
+</div>
     <footer>
         <div class="container">
             <ul class="otstup">
